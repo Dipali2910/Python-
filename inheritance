@@ -1,0 +1,117 @@
+class Demo:
+
+    def __init__(self):
+        print("Parent constructor")
+
+    def func1(self):
+        print("func1")
+
+class Demo1(Demo):
+    def func2(self):
+        print("func2")
+
+    def __init__(self):
+        print("Child constructor")
+
+d1 = Demo1()
+d1.func1()
+d1.func2()
+MULTIPLE INHERITANCE
+class Demo:
+
+    def __init__(self):
+        print("parent constructor")
+
+    def func1(self):
+        print("func1")
+
+class Demo1:
+    def func2(self):
+        print("func2")
+
+    def __init__(self):
+        print("Child constructor")
+
+class Demo2(Demo,Demo1):
+    def func3(self):
+        print("func3")
+
+d2=Demo2()
+d2.func1()
+d2.func2()
+d2.func3()
+Multilevel Inheritance
+class Demo:
+
+    def __init__(self):
+        print("Parent constructor")
+
+    def func1(self):
+        print("func1")
+
+class Demo1(Demo):
+    def func2(self):
+        print("func2")
+
+    def __init__(self):
+        print("Child constructor")
+
+class Demo2(Demo1):
+    def func3(self):
+        print("func3")
+
+d2=Demo2()
+d2.func1()
+d2.func2()
+d2.func3()
+Hierarchical Inheritance
+class Demo:
+    def __init__(self):
+        print("Parent constructor")
+
+    def func1(self):
+        print("func1")
+
+class Demo1(Demo):
+    def func2(self):
+        print("func2")
+
+class Demo2(Demo):
+    def func3(self):
+        print("func3")
+
+d1=Demo1()
+d1.func1()
+d1.func2()
+
+d2=Demo2()
+d2.func1()
+d2.func3()
+Hybrid Inheritance
+class Demo:
+
+    def __init__(self):
+        print("Parent constructor")
+
+    def func1(self):
+        print("func1")
+
+class Demo1(Demo):
+    def func2(self):
+        print("func2")
+
+class Demo2(Demo):
+    def func3(self):
+        print("func3")
+
+class Demo3(Demo1,Demo2):
+    def func4(self):
+        print("func4")
+
+d = Demo3()
+d.func1()
+d.func2()
+d.func3()
+d.func4()
+
+
